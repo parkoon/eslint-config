@@ -13,6 +13,10 @@ module.exports = {
     'react/jsx-filename-extension': ['error', {
       extensions: ['.jsx', '.tsx'],
     }],
+    'react/function-component-definition': ['error', {
+      namedComponents: 'function-declaration',
+      unnamedComponents: 'arrow-function',
+    }],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
   },
