@@ -14,23 +14,17 @@ module.exports = {
           // Side effect imports
           ['^\\u0000'],
           // Packages. 'react' related packages come first.
-          ['^(react)$', '^@?\\w'],
+          ['^react', '^\\w', '^@'],
           // Relative imports. Put same-folder imports first and parent imports last.
-          [
-            '^\\./(?=.*/)(?!/?$)',
-            '^\\.(?!/?$)',
-            '^\\./?$',
-            '^\\.\\.(?!/?$)',
-            '^\\.\\./?$',
-          ],
+          ['^\\.', '^\\.\\.'],
           // Style imports.
           ['^.+\\.css$'],
         ],
       },
     ],
     'simple-import-sort/exports': 'error',
-    'sort-imports': 'off',
-    'import/order': 'off',
+    'import/first': 'error',
+    'import/order': ['error', { 'newlines-between': 'always' }],
     'import/newline-after-import': 'error',
     'import/no-duplicates': 'error',
   },
