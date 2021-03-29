@@ -42,5 +42,8 @@ module.exports = {
       namedComponents: 'function-declaration',
       unnamedComponents: 'arrow-function',
     }],
+
+    // 함수의 인자나 콜백으로 사용되는 컴포넌트를 named function으로 작성하기 위해 예외를 허용합니다. (e.g. React.forwardRef)
+    'prefer-arrow-callback': ['error', { allowNamedFunctions: true }],
   },
 };
