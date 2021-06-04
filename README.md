@@ -31,28 +31,22 @@ module.exports = {
     "@koreacreditdata/eslint-config/typescript",
     "@koreacreditdata/eslint-config/bestpractice",
     "@koreacreditdata/eslint-config/import",
+    "@koreacreditdata/eslint-config/prettier",
   ],
 };
 ```
 
-#### 2. with Prettier
+#### 2. without Prettier
 
-prettier와 함께 사용하려면,
-
-```js
-module.exports = {
-  extends: ["@koreacreditdata", "@koreacreditdata/eslint-config/prettier"],
-};
-```
-
-또는
+prettier를 사용하고 싶지 않다면,
 
 ```js
 module.exports = {
   extends: [
     "@koreacreditdata/eslint-config/react",
     "@koreacreditdata/eslint-config/typescript",
-    "@koreacreditdata/eslint-config/prettier",
+    "@koreacreditdata/eslint-config/bestpractice",
+    "@koreacreditdata/eslint-config/import",
   ],
 };
 ```

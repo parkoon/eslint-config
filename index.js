@@ -4,5 +4,6 @@ module.exports = {
     './typescript.js',
     './bestpractice.js',
     './import.js',
+    './prettier.js'
   ],
 };

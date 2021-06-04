@@ -7,9 +7,10 @@ module.exports = {
     'prettier',
   ],
   rules: {
-    'prettier/prettier': ['error', {
+    'prettier/prettier': ['warn', {
       singleQuote: true,
       trailingComma: 'all',
+      printWidth: 80,
     }],
   },
 };
