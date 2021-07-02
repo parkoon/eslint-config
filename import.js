@@ -13,6 +13,13 @@ module.exports = {
     },
   },
   rules: {
+    'import-name/all-imports-name': [
+      'error',
+      {
+        react: 'React',
+        clsx: 'cx',
+      },
+    ],
     // 유사한 항목을 그룹으로 묶어서 정렬합니다.
     'simple-import-sort/imports': [
       'error',
