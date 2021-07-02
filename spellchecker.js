@@ -6,7 +6,15 @@ module.exports = {
       {
         comments: false,
         ignoreRequire: true,
-        skipWords: [],
+        skipWords: [
+          'bg',
+          'cx',
+          'formatter',
+          'idx',
+          'num',
+          'postfix',
+          'svg',
+        ],
       },
     ],
   },
